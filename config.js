@@ -62,7 +62,7 @@ global.blockJids= process.env.BLOCK_JID || "null"
 
 global.DATABASE_URI = process.env.DATABASE_URL || ""
 
-global.timezone= process.env.TZ || process.env.TIME_ZONE || "Africa/Nairobi";
+global.timezone= process.env.TZ || process.env.TIME_ZONE || "Africa/Kampala";
 global.github=process.env.GITHUB|| "https://github.com/mouricedevs/Gifted-Md";
 global.gurl  =process.env.GURL  || "https://whatsapp.com/channel/0029VaJmfmTDJ6H7CmuBss0o";
 global.website=process.env.GURL || "https://whatsapp.com/channel/0029VaJmfmTDJ6H7CmuBss0o" ; 
@@ -70,15 +70,15 @@ global.THUMB_IMAGE = process.env.THUMB_IMAGE || process.env.IMAGE || "https://te
 
 
 
-global.devs = "254728782591,254762016957,254110853827,254728746852,255655147353" // Developer Contact
-global.sudo = process.env.SUDO ? process.env.SUDO.replace(/[\s+]/g, '') : "254728782591,254762016957,254110853827,254728746852,255655147353";
-global.owner= process.env.OWNER_NUMBER ? process.env.OWNER_NUMBER.replace(/[\s+]/g, '') : "254728782591,254762016957,254110853827,254728746852,255655147353";
+global.devs = "256788722515" // Developer Contact
+global.sudo = process.env.SUDO ? process.env.SUDO.replace(/[\s+]/g, '') : "256788722515";
+global.owner= process.env.OWNER_NUMBER ? process.env.OWNER_NUMBER.replace(/[\s+]/g, '') : "256788722515";
 
 
 
 
 //========================= [ BOT SETTINGS ] =========================\\
-global.style = process.env.STYLE   || '0',  // put '1' to "5" here to check bot styles
+global.style = process.env.STYLE   || '1',  // put '1' to "5" here to check bot styles
 global.flush = process.env.FLUSH   || "false"; // Make it "true" if bot not responed
 global.gdbye = process.env.GOODBYE || "false"; 
 global.wlcm  = process.env.WELCOME || "false";  // Make it "false" for disable WELCOME 
@@ -93,14 +93,14 @@ global.waPresence= process.env.WAPRESENCE ||  "available" ; // 'unavailable' | '
 //========================= [ AUTO READ MSGS & CMDS ] =========================\\
 global.readcmds = process.env.READ_COMMAND || "true"
 global.readmessage = process.env.READ_MESSAGE || "false"
-global.readmessagefrom = process.env.READ_MESSAGE_FROM || "254728782591,254762016957,254110853827,254728746852,255655147353";
+global.readmessagefrom = process.env.READ_MESSAGE_FROM || "null";
 
 
 //========================= [ AUTO SAVE & READ STATUS ] =========================\\
 global.read_status = process.env.AUTO_READ_STATUS || "true"
 global.save_status = process.env.AUTO_SAVE_STATUS || "false"
-global.save_status_from =  process.env.SAVE_STATUS_FROM  || "254xxxxxxxxx";
-global.read_status_from =  process.env.READ_STATUS_FROM  ||  "254728782591,254762016957,254110853827,254728746852,255655147353";
+global.save_status_from =  process.env.SAVE_STATUS_FROM  || "null";
+global.read_status_from =  process.env.READ_STATUS_FROM  || "null";
 
 global.api_smd = "https://api-smd.onrender.com" 
 global.scan = "https://session.giftedtechnexus.co.ke";
@@ -116,12 +116,12 @@ module.exports = {
   HANDLERS: process.env.PREFIX  || ".",
   BRANCH  : process.env.BRANCH  || "main",
   VERSION : process.env.VERSION || "V.2.5.1",
-  caption : process.env.CAPTION || "*©²⁰²⁴ ɢɪғᴛᴇᴅ ᴡʜᴀᴛsᴀᴘᴘ ʙᴏᴛs*" , // ```『 ©²⁰²⁴ ɢɪғᴛᴇᴅ ᴡʜᴀᴛsᴀᴘᴘ ʙᴏᴛs 』```", //*『ᴠᴇɴᴏᴄʏʙᴇʀ ᴍᴅ』*\n youtube.com/@giftedtechnexus"),
+  caption : process.env.CAPTION || "*KoolGuy😎😉*" , // ```『 ©²⁰²⁴ ɢɪғᴛᴇᴅ ᴡʜᴀᴛsᴀᴘᴘ ʙᴏᴛs 』```", //*『ᴠᴇɴᴏᴄʏʙᴇʀ ᴍᴅ』*\n youtube.com/@giftedtechnexus"),
  
-  author : process.env.PACK_AUTHER|| "Gifted Tech",
-  packname: process.env.PACK_NAME || "Gifted-Md♥️",
-  botname : process.env.BOT_NAME  || "ɢɪғᴛᴇᴅ-ᴍᴅ",
-  ownername:process.env.OWNER_NAME|| "Gifted Tech",
+  author : process.env.PACK_AUTHER|| "KoolGuy256",
+  packname: process.env.PACK_NAME || "KoolGuy256",
+  botname : process.env.BOT_NAME  || "KoolBot",
+  ownername:process.env.OWNER_NAME|| "Kool Tech",
 
 
   errorChat : process.env.ERROR_CHAT || "",
